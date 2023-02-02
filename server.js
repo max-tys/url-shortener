@@ -5,6 +5,7 @@ const app = express();
 
 mongoose.set('strictQuery', true)
 // MongoDB automatically creates the database
+// https://mongoosejs.com/docs/connections.html
 mongoose.connect('mongodb://127.0.0.1:27017/urlShortener', {
   useNewUrlParser: true, useUnifiedTopology: true
 })
